@@ -23,7 +23,7 @@ export default function Produtos() {
             <th>Nome</th>
             <th>Quantidade</th>
             <th>Preço</th>
-            <th>Editar</th>
+            <th>Editar / Excluir</th>
           </tr>
         </thead>
         <tbody>
