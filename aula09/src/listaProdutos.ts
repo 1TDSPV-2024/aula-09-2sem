@@ -1,10 +1,4 @@
-type ObjetoLista = {
-    id: number;
-    nome: string;
-    qtd: number;
-    preco: number
-}
-
+import { ObjetoLista } from "./types";
 //Gerando uma lista de objetos
 export const listaProdutos: ObjetoLista[] = [
 
@@ -14,3 +8,7 @@ export const listaProdutos: ObjetoLista[] = [
     { id: 4, nome: "Cadeira", qtd: 2, preco: 3470 },
     { id: 5, nome: "Mouse-Pad", qtd: 100, preco: 25 }
 ];
+
+if(!localStorage.getItem("lista")){
+    localStorage.setItem("lista", JSON.stringify(listaProdutos));
+}

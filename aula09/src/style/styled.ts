@@ -1,3 +1,4 @@
+
 import styled from "styled-components"
 
 export const MeuH1 = styled.h1`
@@ -48,15 +49,80 @@ export const MenuList = styled.ul`
   justify-content: space-around;
 `
 
+// Estilizando o item de link
+// export const MenuLink = styled.a`
+//   color:#fff;
+//   text-decoration: none;
+//   padding: 10px 20px;
+//   display: block;
+// `
 // Estilizando o item de lista
 export const MenuItem = styled.li`
   display: inline;
+  &
+  a{
+    color:#fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+  }
+  
 `
 
-// Estilizando o item de link
-export const MenuLink = styled.a`
-  color:#fff;
-  text-decoration: none;
-  padding: 10px 20px;
-  display: block;
+export const MinhaTabela = styled.table`
+  border-collapse:collapse;
+  border: 2px solid #ff0000;
+  margin:0 auto;
+  width: 70vw;
+  font-size:24px;
+
+  & a{
+    text-decoration:none;
+    color:#fff;
+  }
+
+  &
+   thead{
+    background-color:#514f4f;
+     &
+      th{
+        border:2px solid #ff0000;
+        color:#343030;
+        text-align:left;
+      }
+   }
+
+   &
+    tbody{
+      background-color:#514f4f;
+      color:#fff;
+       &
+        td{
+          border:2px solid #ff0000;
+          text-align:center;
+        }
+    }
+
+    &
+      tfoot{
+        background-color:#514f4f;
+        text-align:center;
+        color:#fff;
+      }
+
+      & tr:nth-child(odd){
+        background-color:#e0aeae;
+        color:#262525;
+      }
+
+      & tr:nth-child(even){
+        background-color:#3a3636;
+        color:#b8b4b4;
+      }
+
+      & tr:hover{
+        background-color:#706a6a;
+        color:#232121;
+      }
+
 `
